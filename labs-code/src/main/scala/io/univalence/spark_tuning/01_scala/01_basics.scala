@@ -1,4 +1,4 @@
-package io.univalence.spark_tuning
+package io.univalence.spark_tuning.`01_scala`
 
 import io.univalence.spark_tuning.internal.exercise_tools._
 
