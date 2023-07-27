@@ -1,5 +1,6 @@
 package io.univalence.spark_tuning.internal
 
+import java.io.File
 import java.time.LocalDateTime
 
 object exercise_tools {
@@ -26,6 +27,19 @@ object exercise_tools {
   def exercise_ignore(label: String)(f: => Unit): Unit = macro ignoreExerciseMacro
 
   def section(label: String)(f: => Unit): Unit = macro sectionMacro
+
+  def clean(outputFilename: String): Unit = {
+    val file = new File(outputFilename)
+
+    if (file.exists()) {
+      if (file.isDirectory) {
+        file.listFiles().toList.foreach(_.delete())
+        file.delete()
+      } else {
+        file.delete()
+      }
+    }
+  }
 
   def time[A](label: String)(f: => A): A = {
     val start = java.lang.System.nanoTime()
