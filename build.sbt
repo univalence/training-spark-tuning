@@ -1,8 +1,8 @@
-ThisBuild / scalaVersion := "2.13.10"
+ThisBuild / scalaVersion := "2.13.8"
 
 val libVersion =
   new {
-    val spark = "3.3.2"
+    val spark = "3.4.1"
     val kafka = "3.5.0"
   }
 
@@ -19,7 +19,7 @@ lazy val root =
 lazy val `labs-code` =
   (project in file("labs-code"))
     .settings(
-      name := "labss-code",
+      name := "labs-code",
       libraryDependencies ++= Seq(
         "org.apache.spark" %% "spark-core"                 % libVersion.spark,
         "org.apache.spark" %% "spark-sql"                  % libVersion.spark,
@@ -28,6 +28,10 @@ lazy val `labs-code` =
         "org.apache.spark" %% "spark-streaming-kafka-0-10" % libVersion.spark,
         "org.apache.spark" %% "spark-sql-kafka-0-10"       % libVersion.spark,
         "org.apache.kafka"  % "kafka-clients"              % libVersion.kafka
+      ),
+      javaOptions ++= Seq(
+        "--add-exports",
+        "java.base/sun.nio.ch=ALL-UNNAMED"
       )
     )
     .dependsOn(`labs-macro`)
