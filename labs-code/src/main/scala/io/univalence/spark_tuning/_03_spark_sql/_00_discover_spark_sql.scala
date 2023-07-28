@@ -1,4 +1,4 @@
-package io.univalence.spark_tuning.`03_spark_sql`
+package io.univalence.spark_tuning._03_spark_sql
 
 import org.apache.spark.sql._
 

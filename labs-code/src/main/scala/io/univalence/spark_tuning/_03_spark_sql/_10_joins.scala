@@ -1,4 +1,4 @@
-package io.univalence.spark_tuning.`03_spark_sql`
+package io.univalence.spark_tuning._03_spark_sql
 
 import org.apache.spark.sql._
 
@@ -44,7 +44,7 @@ import java.nio.file.{Files, Paths}
  * join data about venues (seen in the previous source file) and checkin
  * data (set of checkins emitted by people).
  */
-object joins {
+object _10_joins {
 
   def main(args: Array[String]): Unit =
     time("Joins") {

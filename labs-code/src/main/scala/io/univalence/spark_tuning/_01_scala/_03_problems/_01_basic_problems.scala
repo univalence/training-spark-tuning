@@ -1,8 +1,8 @@
-package io.univalence.spark_tuning.`01_scala`.`03_problems`
+package io.univalence.spark_tuning._01_scala._03_problems
 
 import io.univalence.spark_tuning.internal.exercise_tools._
 
-object `01_basic_problems` {
+object _01_basic_problems {
   def main(Args: Array[String]): Unit = {
       exercise("salary increase") {
     def increase(salaries: List[Double], rate: Double): List[Double] = |>?

@@ -1,11 +1,11 @@
-package io.univalence.spark_tuning.`04_streaming`
+package io.univalence.spark_tuning._04_streaming
 
 import org.apache.spark.sql._
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.streaming.{OutputMode, StreamingQuery}
 import org.apache.spark.sql.types._
 
-object `10-structured_streaming` {
+object _10_structured_streaming {
 
   def main(args: Array[String]): Unit = {
     val spark =

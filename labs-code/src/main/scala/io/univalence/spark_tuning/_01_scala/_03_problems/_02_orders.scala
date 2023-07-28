@@ -1,11 +1,11 @@
-package io.univalence.spark_tuning.`01_scala`.`03_problems`
+package io.univalence.spark_tuning._01_scala._03_problems
 
 import scala.io.Source
 import scala.util.Using
 
 import java.time.LocalDateTime
 
-object `02_orders` {
+object _02_orders {
 
   case class Order(
       id:        String,

@@ -1,4 +1,4 @@
-package io.univalence.spark_tuning.`02_spark_rdd`
+package io.univalence.spark_tuning._02_spark_rdd
 
 import org.apache.spark.{SparkConf, SparkContext}
 import org.apache.spark.rdd.RDD
@@ -9,7 +9,7 @@ import scala.util.Using
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
-object `20-broadcast` {
+object _20_broadcast {
 
   def main(args: Array[String]): Unit = {
     val orderFilename         = "data/orders.csv"

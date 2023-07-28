@@ -1,4 +1,4 @@
-package io.univalence.spark_tuning.`04_streaming`
+package io.univalence.spark_tuning._04_streaming
 
 object Configuration {
   val inputTopic = "input-topic"

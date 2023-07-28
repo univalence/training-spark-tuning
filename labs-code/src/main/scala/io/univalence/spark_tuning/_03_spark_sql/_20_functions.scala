@@ -1,4 +1,4 @@
-package io.univalence.spark_tuning.`03_spark_sql`
+package io.univalence.spark_tuning._03_spark_sql
 
 import org.apache.spark.sql._
 import org.apache.spark.sql.expressions._
@@ -28,7 +28,7 @@ import java.sql.{Date, Timestamp}
  * this set. In this case, Spark SQL allows you to define your own
  * '''UDF''' (for User-Defined Function).
  */
-object functions {
+object _20_functions {
 
   def main(args: Array[String]): Unit =
     time("Functions") {

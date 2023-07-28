@@ -1,4 +1,4 @@
-package io.univalence.spark_tuning.`02_spark_rdd`
+package io.univalence.spark_tuning._02_spark_rdd
 
 import org.apache.spark.{SparkConf, SparkContext}
 import org.apache.spark.rdd.RDD
@@ -18,7 +18,7 @@ import scala.util.Using
  * The main abstraction of Spark is the RDD (Resilient Distributed
  * Dataset), which can be viewed as a distributed collection.
  */
-object `10-rdd` {
+object _10_rdd {
   def main(args: Array[String]): Unit = {
     val filename = "data/orders.csv"
 

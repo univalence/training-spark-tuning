@@ -1,10 +1,10 @@
-package io.univalence.spark_tuning.`05_mllib`
+package io.univalence.spark_tuning._05_mllib
 
 import org.apache.spark.ml.clustering.{KMeans, KMeansModel}
 import org.apache.spark.ml.evaluation.ClusteringEvaluator
 import org.apache.spark.sql.{DataFrame, SparkSession}
 
-object `10-kmean` {
+object _10_kmean {
   def main(args: Array[String]): Unit = {
     val spark =
       SparkSession

@@ -1,4 +1,4 @@
-package io.univalence.spark_tuning.`01_scala`
+package io.univalence.spark_tuning._01_scala
 
 import io.univalence.spark_tuning.internal.exercise_tools._
 
@@ -8,7 +8,7 @@ import io.univalence.spark_tuning.internal.exercise_tools._
  * type we already know and we are familiar with.
  */
 
-object `01_00_types` {
+object _01_00_types {
   def main(args: Array[String]): Unit =
     section("PART 0 - Basic types") {
       exercise("Numeric types") {
@@ -121,7 +121,7 @@ object `01_00_types` {
  *     exercices. Beginners with the Scala language, please do not skip
  *     this section.
  */
-object `01_01_variable` {
+object _01_01_variable {
   def main(args: Array[String]): Unit =
     section("PART 1 - Variables") {
 
@@ -184,7 +184,7 @@ object `01_01_variable` {
  * Like many languages we used to, Scala also support `if/else` block,
  * but Scala has some specificity. Let's see if/else in Scala.
  */
-object `01_02_conditionals` {
+object _01_02_conditionals {
   def main(args: Array[String]): Unit =
     section("PART 2 - Conditionals") {
 
@@ -223,7 +223,7 @@ object `01_02_conditionals` {
  * Now we will see how to define a function in Scala, and we will
  * explore all the possibilities Scala's functions offers.
  */
-object `01_03_functions` {
+object _01_03_functions {
   def main(args: Array[String]): Unit =
     section("PART 3 - Functions / Methods") {
 
@@ -385,7 +385,7 @@ object `01_03_functions` {
  *
  * Note that Scala collections are immutable (except `Array`).
  */
-object `01_04_collections` {
+object _01_04_collections {
   def main(args: Array[String]): Unit = {
     section("PART 4 - Collections") {
 
@@ -423,7 +423,7 @@ object `01_04_collections` {
         val arrayRange: Array[Int] = Array.range(0, 5)
 
         // Array size
-        check(arrayRange.size == ??)
+        check(arrayRange.length == ??)
 
         // First item
         check(arrayRange(0) == ??)
@@ -441,7 +441,7 @@ object `01_04_collections` {
         val arrayRange: Array[Int] = Array.range(0, 5, 2)
 
         // array size
-        check(arrayRange.size == ??)
+        check(arrayRange.length == ??)
 
         // First item
         check(arrayRange(0) == ??)
@@ -675,7 +675,7 @@ object `01_04_collections` {
  * ways. We will explore Scala `for` control structure over the
  * collections we have seen before.
  */
-object `01_05_for` {
+object _01_05_for {
   def main(args: Array[String]): Unit = {
     section("PART 5 - For loops and expressions") {
 
@@ -797,7 +797,7 @@ object `01_05_for` {
  * Pattern-matching will also be discussed later when talking about
  * Scala OOP features. Let's dive now into pattern-matching.
  */
-object `01_06_match` {
+object _01_06_match {
   def main(args: Array[String]): Unit = {
     section("PART 6 - Match expressions") {
 

@@ -1,4 +1,4 @@
-package io.univalence.spark_tuning.`04_streaming`
+package io.univalence.spark_tuning._04_streaming
 
 import org.apache.kafka.clients.admin.{AdminClient, AdminClientConfig, NewTopic}
 import org.apache.kafka.clients.producer.{KafkaProducer, ProducerConfig, ProducerRecord, RecordMetadata}

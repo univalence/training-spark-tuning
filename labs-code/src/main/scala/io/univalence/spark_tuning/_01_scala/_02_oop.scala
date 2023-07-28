@@ -1,4 +1,4 @@
-package io.univalence.spark_tuning.`01_scala`
+package io.univalence.spark_tuning._01_scala
 
 import io.univalence.spark_tuning.internal.exercise_tools._
 
@@ -9,7 +9,7 @@ import io.univalence.spark_tuning.internal.exercise_tools._
  * languages ? We will try to cover these aspects of Scala's class in
  * this section.
  */
-object `02_01_class` {
+object _02_01_class {
   def main(args: Array[String]): Unit =
     section("PART 1 - Classes") {
 
@@ -82,7 +82,7 @@ object `02_01_class` {
  * We will talk about the singleton design pattern in Scala in this
  * section.
  */
-object `02_02_singleton` {
+object _00_discover_spark_sql__read_a_csv_file02_02_singleton {
   def main(args: Array[String]): Unit =
     section("PART 2 - Singleton") {
 
@@ -97,7 +97,7 @@ object `02_02_singleton` {
          */
         object StringUtils {
           def leftPad(str: String, size: Int, padChar: Char): String =
-            (1 to (size - str.size)).map(_ => padChar).mkString ++ str
+            (1 to (size - str.length)).map(_ => padChar).mkString ++ str
         }
 
         /**
@@ -183,7 +183,7 @@ object `02_02_singleton` {
  * class it enrich it with some functionalities we will see in this
  * section.
  */
-object `02_03_singleton` {
+object _02_03_singleton {
   def main(args: Array[String]): Unit =
     section("PART 3 - Case class") {
 
@@ -280,7 +280,7 @@ object `02_03_singleton` {
 /**
  * Scala supports abstract classes. They are very similar to Java ones.
  */
-object `02_04_abstract_class` {
+object _02_04_abstract_class {
   def main(args: Array[String]): Unit =
     section("PART 4 - Abstract class") {
 
@@ -328,7 +328,7 @@ object `02_04_abstract_class` {
  * parameters, just like classes. They provide a great way for you to
  * organize behaviors into small, modular units.
  */
-object `02_05_trait` {
+object _02_05_trait {
   def main(args: Array[String]): Unit =
     section("PART 5 - Traits") {
 
@@ -402,12 +402,12 @@ object `02_05_trait` {
 
         trait B extends A {
           // trait `B` overrides `A#foo`
-          override def foo = "B" + super.foo
+          override def foo: String = "B" + super.foo
         }
 
         trait C extends A {
           // trait `C` also overrides `A#foo`
-          override def foo = "C" + super.foo
+          override def foo: String = "C" + super.foo
         }
 
         /**
@@ -435,7 +435,7 @@ object `02_05_trait` {
  * We will discuss it now we are familiar with `case` classes and
  * traits.
  */
-object `02_06_sealed` {
+object _02_06_sealed {
   def main(args: Array[String]): Unit =
     section("PART 6 - Sealed trait") {
 

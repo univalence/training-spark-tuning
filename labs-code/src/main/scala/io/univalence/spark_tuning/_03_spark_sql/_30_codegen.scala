@@ -1,4 +1,4 @@
-package io.univalence.education_spark._20_spark_sql
+package io.univalence.spark_tuning._03_spark_sql
 
 import org.apache.spark.sql.SparkSession
 
@@ -20,7 +20,7 @@ object _30_codegen {
 
     val data =
       spark.read
-        .option("header", true)
+        .option("header", "true")
         .csv("data/stations.csv")
 
     val result =
