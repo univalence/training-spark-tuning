@@ -68,19 +68,19 @@ object _10_rdd {
     val spark = SparkContext.getOrCreate(conf)
 
     // load the file
-    // val fileRdd: RDD[String] = spark.textFile(filename, minPartitions = 4)
-    val lines =
-      Using(Source.fromFile(filename)) { file =>
-        file.getLines().toList
-      }.get
-    val fileRdd: RDD[String] = spark.parallelize(lines, numSlices = 4)
+     val fileRdd: RDD[String] = spark.textFile(filename, minPartitions = 4)
+//    val lines =
+//      Using(Source.fromFile(filename)) { file =>
+//        file.getLines().toList
+//      }.get
+//    val fileRdd: RDD[String] = spark.parallelize(lines, numSlices = 4)
 
-    fileRdd.foreachPartition(partition => partition.foreach(line => println(line)))
-    fileRdd.repartition(4)
-    fileRdd.coalesce(4)
+//    fileRdd.foreachPartition(partition => partition.foreach(line => println(line)))
+//    fileRdd.repartition(4)
+//    fileRdd.coalesce(4)
 
     // get the header
-    val header = fileRdd.first()
+    val header: String = fileRdd.first()
 
     // Transformation: convert line into order
     val orderRdd: RDD[Order] =
