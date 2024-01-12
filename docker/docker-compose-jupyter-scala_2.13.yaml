@@ -1,6 +1,6 @@
 services:
   almond:
-    image: almondsh/almond:0.14.0-RC12-scala-2.13.11
+    image: almondsh/almond:0.14.0-RC14-scala-2.13.12
     ports:
       - "8888:8888"
       - "4040-4050:4040-4050"
